@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 num1 = int(input("Enter the first number: "))
-num2 = int(input("and Enter the second number: "))
+num2 = int(input("Enter the second number: "))
 operate = input("Choose the operation (+, -, *, /): ")
 
 match operate:
