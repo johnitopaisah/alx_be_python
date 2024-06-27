@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 task = input("Enter your task: ")
-reminder = input("Priority (high/medium/low): ")
+priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
-match reminder:
+match priority:
     case 'high':
         if time_bound == "yes":
             print(f"{task} is a high priority task that requires immediate attention today!")
