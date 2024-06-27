@@ -21,4 +21,4 @@ match priority:
         else:
             print(f"{task} is a low priority task. Consider completing it when you have free time.")
     case _:
-        print("Reminder", reminder)
+        print("Reminder:", reminder)
