@@ -2,6 +2,7 @@
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
+reminder = "Invalid priority entered. Please enter 'high', 'medium', or 'low'."
 
 match priority:
     case 'high':
@@ -20,4 +21,4 @@ match priority:
         else:
             print(f"{task} is a low priority task. Consider completing it when you have free time.")
     case _:
-        print("Reminder:", priority)
+        print("Reminder", reminder)
