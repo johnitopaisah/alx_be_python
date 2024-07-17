@@ -4,3 +4,10 @@
 #  we want the hexa format
 for num in range(0, 99):
     print(f"{num} = 0x{num:X}")
+
+
+coordinates = [3, 4, 5]
+
+my_set = set(coordinates)
+import random
+random.
