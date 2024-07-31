@@ -30,9 +30,7 @@ class Square:
         ]
 
         def draw(self):
-            """
-                Draw teh square using matplotlib.
-            """
+            """Draw teh square using matplotlib."""
             x_values = [p.x for p in self.points] + [self.points[0].x]
             y_values = [p.y for p in self.points] + [self.points[0].y]
 
