@@ -24,10 +24,12 @@ class Square:
         # Calculate the other three points based on the bottom-left points
         return [
             bl,
-            Point(bl.x + sl, bl.y),         # bottom-right
+            Point(2*bl.x + sl, bl.y),         # bottom-right
             Point(bl.x + sl, bl.y + sl),    # top-ritht
-            Point(bl.x, bl.y + sl)          # top-left
+            Point(2*bl.x, bl.y + sl)          # top-left
         ]
+    
+    
 
     def draw(self):
         """Draw teh square using matplotlib."""
@@ -44,7 +46,7 @@ class Square:
         plt.show()
 
 # Usage
-bottom_left_point = Point(1, 1)         # Bottom-left corner at (1, 1)
+bottom_left_point = Point(2, 3)         # Bottom-left corner at (1, 1)
 side_length = 4                         # Side of the square
 square = Square(bottom_left_point, side_length)
 square.draw()
