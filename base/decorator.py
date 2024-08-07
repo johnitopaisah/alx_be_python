@@ -61,6 +61,9 @@ def timer(f):
         stop_time = time.time
         dt = stop_time - start_time
         print(f'diff_time = {dt}')
+        return result
+    
+    return wrapper
 
 
 
